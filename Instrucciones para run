@@ -1,0 +1,12 @@
+Instruccion, en caso que quiera correr el programa debera tener MySQL, una base de datos llamada usuarios, actualizar los datos de la conexion a la BD que es el root y su contraseña y una tabla llamada users. le dejo el codigo a continuacion:
+create database usuarios;
+
+USE usuarios;
+
+CREATE TABLE IF NOT EXISTS users (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(30),
+    Edad INT
+);
+
+select * from users; (para ver los datos que vaya guardando)
